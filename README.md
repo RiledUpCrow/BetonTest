@@ -217,7 +217,7 @@ to true in _config.yml_ file in "plugins/PluginMetrics" directory.
 
 ## Licensing, source code and compiling
 
-Hordes is licensed under GPLv3, which means it's a free software (as in "free
+BetonTest is licensed under GPLv3, which means it's a free software (as in "free
 speech", not "free beer"). It's distributed from SpigotMC.org for 7€.
 The source code can be found on [GitHub](https://github.com/Co0sh/BetonTest). To
 compile it you need JDK 1.7 and Maven 3 installed on your system. Issue
