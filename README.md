@@ -219,7 +219,7 @@ to true in _config.yml_ file in "plugins/PluginMetrics" directory.
 
 Hordes is licensed under GPLv3, which means it's a free software (as in "free
 speech", not "free beer"). It's distributed from SpigotMC.org for 7€.
-The source code can be found on [GitHub](https://github.com/Co0sh/Hordes). To
+The source code can be found on [GitHub](https://github.com/Co0sh/BetonTest). To
 compile it you need JDK 1.7 and Maven 3 installed on your system. Issue
 `mvn install` command inside the root directory. The JAR file should appear
 in _target_ folder.
