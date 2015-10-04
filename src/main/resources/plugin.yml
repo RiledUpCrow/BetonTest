@@ -1,0 +1,22 @@
+name: BetonTest
+main: pl.betoncraft.betontest.BetonTest
+description: Quiz plugin
+authors: [Co0sh]
+softdepend: [BetonQuest]
+version: 1.0
+commands:
+  test:
+    description: General test command
+    usage: /<command>
+    permission: betontest.admin
+    aliases: [quiz]
+  starttest:
+    description: Command for starting the test
+    usage: /<command>
+    permission: betontest.start
+    aliases: [startquiz]
+permissions:
+  betontest.admin:
+    default: op
+  betontest.start:
+    default: true

@@ -1,0 +1,345 @@
+mysql:
+  host: ''
+  port: ''
+  user: ''
+  pass: ''
+  base: ''
+#tests:
+#  default:
+#    messages:
+#      start: '&2You have started the trial! Good luck!'
+#      resume: '&2Next try!'
+#      pass: '&2Congratulations, you have passed the trial.'
+#      fail: '&4You have failed!'
+#      pause: '&cWrong answer, walk through the web!'
+#    commands:
+#      pass: q e %player% plugins.pass
+#      fail: q e %player% plugins.fail
+#      pause: q e %player% plugins.pause
+#    blocked_cmds:
+#    - spawn
+#    - suicide
+#    - kill
+#    max_mistakes: 5
+#    teleport_back: false
+#    on_mistake: pause
+#    categories:
+#      first:
+#        choices: 4
+#        player_loc: -409.5;55;-149.5;world;0;0
+#        boards:
+#          left:
+#            location: -407;57;-149;world
+#            direction: west
+#          right:
+#            location: -413;57;-146;world
+#            direction: east
+#        questions:
+#          q1:
+#            text: The creeper's shape was based on a mistake, but what was Notch TRYING to make at the time?
+#            correct:
+#              c1:
+#                text: Pig
+#                comment: '&2Correct.'
+#            incorrect:
+#              i1:
+#                text: Zombie
+#                comment: '&cNo, it was a pig.'
+#              i2:
+#                text: Skeleton
+#                comment: '&cNo, it was a pig.'
+#              i3:
+#                text: Horse
+#                comment: '&cNo, it was a pig.'
+#              i4:
+#                text: Sheep
+#                comment: '&cNo, it was a pig.'
+#              i5:
+#                text: Squid
+#                comment: '&cNo, it was a pig.'
+#              i6:
+#                text: Wolf
+#                comment: '&cNo, it was a pig.'
+#          q2:
+#            text: Which biome are HOSTILE mobs unable to spawn in?
+#            correct:
+#              c1:
+#                text: 'Mushroom Island'
+#                comment: '&2Correct.'
+#            incorrect:
+#              i1:
+#                text: Flower Forest
+#                comment: '&cNo, it''s a Mushroom Island.'
+#              i2:
+#                text: Village
+#                comment: '&cNo, it''s a Mushroom Island.'
+#              i3:
+#                text: Desert
+#                comment: '&cNo, it''s a Mushroom Island.'
+#              i4:
+#                text: Ocean
+#                comment: '&cNo, it''s a Mushroom Island.'
+#              i5:
+#                text: Birch Forest
+#                comment: '&cNo, it''s a Mushroom Island.'
+#          q3:
+#            text: Which mob cannot swim?
+#            correct:
+#              c1:
+#                text: Iron Golem
+#                comment: '&2Correct. Slimes also cannot swim.'
+#              c2:
+#                text: Slime
+#                comment: '&2Correct. Iron Golems also cannot swim.'
+#            incorrect:
+#              i1:
+#                text: Zombie in full iron armor
+#                comment: '&cWhat were you thinking?'
+#              i2:
+#                text: Silverfish
+#                comment: '&cNo, it''s Slime or Iron Golem.'
+#              i3:
+#                text: Creeper
+#                comment: '&cHave you ever played Minecraft...?'
+#              i4:
+#                text: Skeleton
+#                comment: '&cHave you ever played Minecraft...?'
+#              i5:
+#                text: Cave Spider
+#                comment: '&cHave you ever played Minecraft...?'
+#      second:
+#        choices: 4
+#        player_loc: -409.5;55;-142.5;world;0;0
+#        boards:
+#          left:
+#            location: -407;57;-142;world
+#            direction: west
+#          right:
+#            location: -413;57;-139;world
+#            direction: east
+#        questions:
+#          q1:
+#            text: What does Notch drop when killed in multiplayer besides his inventory?
+#            correct:
+#              c1:
+#                text: Apple
+#                comment: '&2Correct.'
+#            incorrect:
+#              i1:
+#                text: Diamond
+#                comment: '&cNo, it''s an apple.'
+#              i2:
+#                text: Fish
+#                comment: '&cNo, it''s an apple.'
+#              i3:
+#                text: Stick
+#                comment: '&cNo, it''s an apple.'
+#              i4:
+#                text: His head
+#                comment: '&cNo, it''s an apple.'
+#              i5:
+#                text: Nothing
+#                comment: '&cNo, it''s an apple.'
+#          q2:
+#            text: Which of these does Bone Meal have an effect on?
+#            correct:
+#              c1: 
+#                text: Grass
+#                comment: '&2Correct.'
+#              c2: 
+#                text: Potato
+#                comment: '&2Correct.'
+#              c3: 
+#                text: Sapling
+#                comment: '&2Correct.'
+#            incorrect:
+#              i1:
+#                text: Sugar Cane
+#                comment: '&cNo, it does nothing to this block.'
+#              i2:
+#                text: Nether Wart
+#                comment: '&cNo, it does nothing to this block.'
+#              i3:
+#                text: Vines
+#                comment: '&cNo, it does nothing to this block.'
+#              i4:
+#                text: Tall grass
+#                comment: '&cNo, it does nothing to this block.'
+#              i5:
+#                text: Dead Bush
+#                comment: '&cNo, it does nothing to this block.'
+#          q3:
+#            text: Which of these facts about milk is true?
+#            correct:
+#              c1:
+#                text: Cures poison
+#                comment: '&2Correct.'
+#              c2:
+#                text: Cake ingredient
+#                comment: '&2Correct.'
+#              c3:
+#                text: Cancels potion effects
+#                comment: '&2Correct.'
+#            incorrect:
+#              i1:
+#                text: Restores hunger bar
+#                comment: '&cNo, it does not.'
+#              i2:
+#                text: Can be taken from Cows and Sheeps
+#                comment: '&cOnly from Cow.'
+#              i3:
+#                text: Can be caught while fishing
+#                comment: '&cSorry but no.'
+#              i4:
+#                text: Sold by Villagers
+#                comment: '&cSorry but no.'
+#      third:
+#        choices: 4
+#        player_loc: -409.5;55;-135.5;world;0;0
+#        boards:
+#          left:
+#            location: -407;57;-135;world
+#            direction: west
+#          right:
+#            location: -413;57;-132;world
+#            direction: east
+#        questions:
+#          q1:
+#            text: Which of these can be used to make potions?
+#            correct:
+#              c1:
+#                text: Glowstone Dust
+#                comment: '&2Correct.'
+#              c2:
+#                text: Redstone
+#                comment: '&2Correct.'
+#            incorrect:
+#              i1:
+#                text: Mushroom
+#                comment: '&cWrong answer.'
+#              i2:
+#                text: String
+#                comment: '&cWrong answer.'
+#              i3:
+#                text: Gold Nugget
+#                comment: '&cWrong answer.'
+#              i4:
+#                text: Slime Ball
+#                comment: '&cWrong answer.'
+#              i5:
+#                text: Rabbit Hide
+#                comment: '&cWrong answer.'
+#              i6:
+#                text: Egg
+#                comment: '&cWrong answer.'
+#          q2:
+#            text: Where does the compas point to?
+#            correct:
+#              c1:
+#                text: Original spawnpoint
+#                comment: '&2Correct.'
+#            incorrect:
+#              i1:
+#                text: North
+#                comment: '&cWrong answer.'
+#              i2:
+#                text: South
+#                comment: '&cWrong answer.'
+#              i3:
+#                text: West
+#                comment: '&cWrong answer.'
+#              i4:
+#                text: East
+#                comment: '&cWrong answer.'
+#              i5:
+#                text: Stronghold
+#                comment: '&cWrong answer.'
+#              i6:
+#                text: Current bed spawnpoint
+#                comment: '&cWrong answer.'
+#          q3:
+#            text: How long does day/night cycle takes in real time?
+#            correct:
+#              c1:
+#                text: 20 minutes
+#                comment: '&2Correct.'
+#            incorrect:
+#              i1:
+#                text: 10 minutes
+#                comment: '&cWrong answer.'
+#              i2:
+#                text: 30 minutes
+#                comment: '&cWrong answer.'
+#              i3:
+#                text: 40 minutes
+#                comment: '&cWrong answer.'
+#              i4:
+#                text: 1 hour
+#                comment: '&cWrong answer.'
+#      fourth:
+#        choices: 4
+#        player_loc: -409.5;55;-128.5;world;0;0
+#        boards:
+#          left:
+#            location: -407;57;-128;world
+#            direction: west
+#          right:
+#            location: -413;57;-125;world
+#            direction: east
+#        questions:
+#          q1:
+#            text: Which of these cannot be used as fuel in furnace?
+#            correct:
+#              c1:
+#                text: Book
+#                comment: '&2Correct.'
+#              c2:
+#                text: Dead Bush
+#                comment: '&2Correct.'
+#            incorrect:
+#              i1:
+#                text: Mushroom Block
+#                comment: '&cWrong answer.'
+#              i2:
+#                text: Daylight sensor
+#                comment: '&cWrong answer.'
+#              i3:
+#                text: Bookshelf
+#                comment: '&cWrong answer.'
+#              i4:
+#                text: Blaze rod
+#                comment: '&cWrong answer.'
+#              i5:
+#                text: Jukebox
+#                comment: '&cWrong answer.'
+#          q2:
+#            text: Which one of these mobs is not considered "hostile"?
+#            correct:
+#              c1:
+#                text: Wolf
+#                comment: '&2Correct. It''s a "neutral" mob - it will attack you only if provoked.'
+#              c2:
+#                text: Spider
+#                comment: '&2Correct. It''s a "neutral" mob - it will attack you only in darkness.'
+#              c3:
+#                text: Enderman
+#                comment: '&2Correct. It''s a "neutral" mob - it will attack you only if you directly look at it.'
+#              c4:
+#                text: Zombie Pigman
+#                comment: '&2Correct. It''s a "neutral" mob - it will attack you only if provoked.'
+#            incorrect:
+#              i1:
+#                text: Silverfish
+#                comment: '&cWrong answer.'
+#              i2:
+#                text: Endermite
+#                comment: '&cWrong answer.'
+#              i3:
+#                text: Ghast
+#                comment: '&cWrong answer.'
+#              i4:
+#                text: Slime
+#                comment: '&cWrong answer.'
+#              i5:
+#                text: Guardian
+#                comment: '&cWrong answer.'
