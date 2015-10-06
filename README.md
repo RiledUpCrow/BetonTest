@@ -98,7 +98,8 @@ the opposite direction, north.
 ### Questions
 
 Each question has the text, correct answers and incorrect answers. Text is just
-the text displayed as the question. Each answer, correct or incorrect, must have
+the text displayed as the question. It can be colored with `prefix` option.
+It accepts color codes. Each answer, correct or incorrect, must have
 defined its text and the comment. Text is what will be displayed on the sign and
 the comment will be shown to the player once he chooses this answer.
 

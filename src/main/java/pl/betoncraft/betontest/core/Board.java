@@ -189,12 +189,26 @@ public class Board {
 	
 	private void displayQuestion() {
 		ArrayList<String> lines = splitToLines(question.getQuestion());
+		int boardWidth = category.getChoices();
+		int answerWidth = (lines.size() % 4 == 0) ? lines.size() / 4 :
+				((lines.size() - (lines.size() % 4)) / 4) + 1;
+		if ((boardWidth - answerWidth) % 2 == 1) {
+			answerWidth++;
+		}
+		int offset = (boardWidth - answerWidth) / 2;
+		int additionalLines = lines.size() % answerWidth;
+		int linesPerSign = (lines.size() - additionalLines) / answerWidth;
 		int counter = 0;
-		for (Block block : qSigns) {
-			Sign sign = (Sign) block.getState();
+		for (int block = 0; block < qSigns.size(); block++) {
+			Sign sign = (Sign) qSigns.get(block).getState();
 			for (int i = 0; i < 4; i++) {
-				if (counter < lines.size()) {
-					sign.setLine(i, "§1" + lines.get(counter));
+				if (block < offset) {
+					sign.setLine(i, "");
+				} else if (counter < lines.size() && i < (linesPerSign +
+						((additionalLines > 0) ? 1 : 0))) {
+					String line = question.getPrefix() + lines.get(counter);
+					sign.setLine(i, line);
+					if (i == linesPerSign) additionalLines--;
 					counter++;
 				} else {
 					sign.setLine(i, "");

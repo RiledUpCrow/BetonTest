@@ -34,6 +34,7 @@ public class Question {
 	private String question;
 	private ArrayList<Answer> corrects = new ArrayList<>();
 	private ArrayList<Answer> incorrects = new ArrayList<>();
+	private String prefix;
 	
 	public Question(BetonTest plugin, Category category, ConfigurationSection config)
 			throws QuestionException {
@@ -42,6 +43,7 @@ public class Question {
 		question = config.getString("text");
 		if (question == null)
 			throw new QuestionException("question text not defined");
+		prefix = config.getString("prefix", "").replace('&', '§');
 		if (config.getConfigurationSection("correct") == null)
 			throw new QuestionException("correct answers not defined");
 		for (String key : config.getConfigurationSection("correct")
@@ -97,6 +99,13 @@ public class Question {
 	 */
 	public ArrayList<Answer> getIncorrects() {
 		return new ArrayList<>(incorrects);
+	}
+	
+	/**
+	 * @return the prefix for coloring the question on board
+	 */
+	public String getPrefix() {
+		return prefix;
 	}
 
 }

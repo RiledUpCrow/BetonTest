@@ -37,6 +37,7 @@ mysql:
 #        questions:
 #          q1:
 #            text: The creeper's shape was based on a mistake, but what was Notch TRYING to make at the time?
+#            prefix: '&1'
 #            correct:
 #              c1:
 #                text: Pig
@@ -62,6 +63,7 @@ mysql:
 #                comment: '&cNo, it was a pig.'
 #          q2:
 #            text: Which biome are HOSTILE mobs unable to spawn in?
+#            prefix: '&1'
 #            correct:
 #              c1:
 #                text: 'Mushroom Island'
@@ -84,6 +86,7 @@ mysql:
 #                comment: '&cNo, it''s a Mushroom Island.'
 #          q3:
 #            text: Which mob cannot swim?
+#            prefix: '&1'
 #            correct:
 #              c1:
 #                text: Iron Golem
@@ -120,6 +123,7 @@ mysql:
 #        questions:
 #          q1:
 #            text: What does Notch drop when killed in multiplayer besides his inventory?
+#            prefix: '&1'
 #            correct:
 #              c1:
 #                text: Apple
@@ -142,6 +146,7 @@ mysql:
 #                comment: '&cNo, it''s an apple.'
 #          q2:
 #            text: Which of these does Bone Meal have an effect on?
+#            prefix: '&1'
 #            correct:
 #              c1: 
 #                text: Grass
@@ -170,6 +175,7 @@ mysql:
 #                comment: '&cNo, it does nothing to this block.'
 #          q3:
 #            text: Which of these facts about milk is true?
+#            prefix: '&1'
 #            correct:
 #              c1:
 #                text: Cures poison
@@ -206,6 +212,7 @@ mysql:
 #        questions:
 #          q1:
 #            text: Which of these can be used to make potions?
+#            prefix: '&1'
 #            correct:
 #              c1:
 #                text: Glowstone Dust
@@ -234,6 +241,7 @@ mysql:
 #                comment: '&cWrong answer.'
 #          q2:
 #            text: Where does the compas point to?
+#            prefix: '&1'
 #            correct:
 #              c1:
 #                text: Original spawnpoint
@@ -259,6 +267,7 @@ mysql:
 #                comment: '&cWrong answer.'
 #          q3:
 #            text: How long does day/night cycle takes in real time?
+#            prefix: '&1'
 #            correct:
 #              c1:
 #                text: 20 minutes
@@ -289,6 +298,7 @@ mysql:
 #        questions:
 #          q1:
 #            text: Which of these cannot be used as fuel in furnace?
+#            prefix: '&1'
 #            correct:
 #              c1:
 #                text: Book
@@ -314,6 +324,7 @@ mysql:
 #                comment: '&cWrong answer.'
 #          q2:
 #            text: Which one of these mobs is not considered "hostile"?
+#            prefix: '&1'
 #            correct:
 #              c1:
 #                text: Wolf
