@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>pl.betoncraft.betontest</groupId>
   <artifactId>BetonTest</artifactId>
-  <version>1.0</version>
+  <version>1.0.1</version>
   <description>	</description>
     <build>
         <finalName>${artifactId}</finalName>
