@@ -197,20 +197,6 @@ BetonTest adds 4 conditions to BetonQuest and 1 event. Here is the description:
   argument is the name of the test. It works exactly as the **/test start**
   command.
 
-## Test server
-
-There is a test server where you can pass an example quiz about general Minecraft
-knowledge. It's the same quiz as the example in the default _config.yml_ file.
-Connect with `betonquest.betoncraft.pl` server and talk with
-Co0sh. Ask him to show you other plugins. You will be teleported to an ugly inn.
-Talk with ScrollGiver and accept his scrolls. Now use **Trial Portal** to
-teleport to the quiz. There you can start the quiz by talking with the Guard.
-The quiz has 4 categories, 4 choices each and you have 5 chances before you fail.
-It is set to `pause` and you will be teleported to a short cobweb path after
-each mistake. To resume the test, talk with the Guard again. Don't use scrolls
-while in the test (TownPortal will have an update with WorldGuard flag denying
-scroll use in a region, so soon it won't be a problem).
-
 ## Metrics
 
 BetonTest uses the metrics system, which can be disabled by setting `opt-out`

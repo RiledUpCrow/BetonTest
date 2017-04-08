@@ -19,6 +19,7 @@ package pl.betoncraft.betontest.betonquest;
 
 import org.bukkit.entity.Player;
 
+import pl.betoncraft.betonquest.Instruction;
 import pl.betoncraft.betonquest.InstructionParseException;
 import pl.betoncraft.betonquest.api.QuestEvent;
 import pl.betoncraft.betonquest.utils.PlayerConverter;
@@ -35,14 +36,11 @@ public class StartEvent extends QuestEvent {
 	private Test test;
 	private final BetonTest betonTest = BetonTest.getPlugin(BetonTest.class);
 
-	public StartEvent(String packName, String instructions)
+	public StartEvent(Instruction instruction)
 			throws InstructionParseException {
-		super(packName, instructions);
-		String[] parts = instructions.split(" ");
-		if (parts.length < 2) {
-			throw new InstructionParseException("Test not defined");
-		}
-		test = betonTest.getTests().get(parts[1]);
+		super(instruction);
+		String name = instruction.next();
+		test = betonTest.getTests().get(name);
 		if (test == null)
 			throw new InstructionParseException("Test does not exist");
 	}

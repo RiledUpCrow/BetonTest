@@ -19,6 +19,7 @@ package pl.betoncraft.betontest.betonquest;
 
 import org.bukkit.entity.Player;
 
+import pl.betoncraft.betonquest.Instruction;
 import pl.betoncraft.betonquest.InstructionParseException;
 import pl.betoncraft.betonquest.api.Condition;
 import pl.betoncraft.betonquest.utils.PlayerConverter;
@@ -35,15 +36,12 @@ public class ActiveCondition extends Condition {
 	private final Test test;
 	private final BetonTest betonTest = BetonTest.getPlugin(BetonTest.class);
 
-	public ActiveCondition(String packName, String instructions)
+	public ActiveCondition(Instruction instruction)
 			throws InstructionParseException {
-		super(packName, instructions);
-		String[] parts = instructions.split(" ");
-		if (parts.length < 2) {
-			throw new InstructionParseException("Test not defined");
-		}
-		if (!parts[1].equalsIgnoreCase("any")) {
-			test = betonTest.getTests().get(parts[1]);
+		super(instruction);
+		String name = instruction.next();
+		if (!name.equalsIgnoreCase("any")) {
+			test = betonTest.getTests().get(name);
 			if (test == null)
 				throw new InstructionParseException("Test does not exist");
 		} else {
